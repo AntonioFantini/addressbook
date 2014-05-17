@@ -19,7 +19,7 @@ public class AddressbookTest extends TestCase {
 	}
 
 	public void testApp() {
-		
+
 		System.out.println(ExecutorFactory.getExecutor(ExecutorType.OLDEST_FINDER).execute());
 		System.out.println(ExecutorFactory.getExecutor(ExecutorType.MALES_COUNTER).execute());
 		System.out.println(ExecutorFactory.getExecutor(ExecutorType.DOD_FINDER).execute());

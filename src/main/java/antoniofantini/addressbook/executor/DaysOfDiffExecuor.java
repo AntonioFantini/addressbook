@@ -1,10 +1,13 @@
 package antoniofantini.addressbook.executor;
 
-public class DaysOfDiffExecuor implements Executor{
+import antoniofantini.addressbook.utils.Utils;
+
+public class DaysOfDiffExecuor extends AbsExecutor {
 
 	@Override
 	public String execute() {
-		return "DAYS OF DIFFERENCE FINDER WORKS";
+		return "There are " + Utils.daysOfDifference(addressBook.get("Bill").getdOB(), addressBook.get("Paul").getdOB())
+				+ " days between Bill and Paul Dates of Birth";
 	}
 
 }
