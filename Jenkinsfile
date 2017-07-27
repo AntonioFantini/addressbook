@@ -14,10 +14,8 @@ pipeline {
             
           },
           "Unit test": {
-          try{
             sh 'mvn test'
-            }catch(e){
-            }
+            
           }
         )
       }
