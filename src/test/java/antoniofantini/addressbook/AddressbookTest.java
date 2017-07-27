@@ -23,7 +23,6 @@ public class AddressbookTest extends TestCase {
 		System.out.println(ExecutorFactory.getExecutor(ExecutorType.OLDEST_FINDER).execute());
 		System.out.println(ExecutorFactory.getExecutor(ExecutorType.MALES_COUNTER).execute());
 		System.out.println(ExecutorFactory.getExecutor(ExecutorType.DOD_FINDER).execute());
-               //for test purpose
-               throw new RuntimeException();
+               
 	}
 }
