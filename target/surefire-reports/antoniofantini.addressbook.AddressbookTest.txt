@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: antoniofantini.addressbook.AddressbookTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.054 sec <<< FAILURE!
+testApp(antoniofantini.addressbook.AddressbookTest)  Time elapsed: 0.04 sec  <<< ERROR!
+java.lang.RuntimeException
+	at antoniofantini.addressbook.AddressbookTest.testApp(AddressbookTest.java:27)
