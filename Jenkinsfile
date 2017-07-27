@@ -23,6 +23,7 @@ pipeline {
     stage('Deploy') {
       steps {
         echo 'Deployed'
+        junit(allowEmptyResults: true, testResults: '**/target/*-reports/*.xml')
       }
     }
   }
