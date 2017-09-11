@@ -9,7 +9,6 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build started'
-        tool 'maven-3.3.9'
       }
     }
     stage('Test') {
@@ -20,7 +19,6 @@ pipeline {
             
           },
           "Unit test": {
-            tool(name: 'maven-3.3.9', type: 'maven')
             sh 'mvn test'
             
           }
