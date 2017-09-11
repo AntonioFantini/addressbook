@@ -20,7 +20,7 @@ pipeline {
             
           },
           "Unit test": {
-            tool 'maven maven-3.3.9'
+            tool(name: 'maven-3.3.9', type: 'maven')
             sh 'mvn test'
             
           }
