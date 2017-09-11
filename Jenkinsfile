@@ -5,10 +5,15 @@ pipeline {
     }
     
   }
+  tools { 
+        maven 'maven-3.3.9' 
+    }
   stages {
     stage('Build') {
       steps {
         echo 'Build started'
+        echo 'PATH = ${PATH}'
+        echo 'M2_HOME = ${M2_HOME}'
       }
     }
     stage('Test') {
