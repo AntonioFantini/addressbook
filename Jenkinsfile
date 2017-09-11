@@ -5,9 +5,6 @@ pipeline {
     }
     
   }
-  tools { 
-        maven 'maven-3.3.9' 
-    }
   stages {
     stage('Build') {
       steps {
@@ -37,7 +34,7 @@ pipeline {
       }
     }
   }
-  environment {
-    mvn = '/opt/apache-maven-3.3.9/bin'
+  tools {
+    maven 'maven-3.3.9'
   }
 }
