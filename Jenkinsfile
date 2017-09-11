@@ -9,6 +9,10 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build started'
+        script {
+          waitForCIMessage providerName: 'CI Publish', selector: 'method = \'build\' and CI_NAME = \'mead-cron-scripts\''
+        }
+        
       }
     }
     stage('Test') {
