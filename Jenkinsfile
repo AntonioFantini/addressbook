@@ -9,7 +9,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build started'
-        tool(name: 'maven', type: 'maven-3.3.9')
+        tool 'maven-3.3.9'
       }
     }
     stage('Test') {
